@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'nav_title' => 'マウント',
+    'model_label' => 'マウント',
+    'model_label_plural' => 'マウント',
+    'name' => '名前',
+    'name_help' => 'このマウントを他と区別するための一意の名前。',
+    'source' => 'ソース',
+    'source_help' => 'コンテナにマウントするホストシステム上のファイルパス。',
+    'target' => 'ターゲット',
+    'target_help' => 'コンテナ内でマウントにアクセスできる場所。',
+    'read_only' => '読み取り専用？',
+    'read_only_help' => 'コンテナ内でマウントを読み取り専用にしますか？',
+    'description' => '説明',
+    'description_help' => 'このマウントの詳細な説明',
+    'no_mounts' => 'マウントがありません',
+    'eggs' => 'Egg',
+    'nodes' => 'ノード',
+    'user_mountable' => 'ユーザーがマウント可能？',
+    'user_mountable_help' => 'ユーザーが自分のサーバーでこのマウントのオン・オフを切り替えられるようにしますか？',
+    'toggles' => [
+        'writable' => '書き込み可能',
+        'read_only' => '読み取り専用',
+        'user_mountable' => 'ユーザーがマウント可能',
+        'not_user_mountable' => '管理者のみ',
+    ],
+    'table' => [
+        'name' => '名前',
+        'all_eggs' => 'すべての Egg',
+        'all_nodes' => 'すべてのノード',
+        'read_only' => '読み取り専用',
+        'user_mountable' => 'ユーザーがマウント可能',
+    ],
+];
