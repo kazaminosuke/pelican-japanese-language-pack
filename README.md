@@ -1,2 +1,52 @@
-# pelican-japanese-language-pack
-日本語化プラグイン for Pelican Panel - Japanese translation pack for the Pelican game server management panel
+# Japanese Language Pack for Pelican Panel
+
+Pelican Panel 用の日本語翻訳プラグインです。
+
+## 概要
+
+このプラグインは [Pelican Panel](https://github.com/pelican-dev/panel) に日本語ロケールを追加します。`category: language` プラグインとして、本体の `lang/en` に対応する翻訳ファイルを `lang/ja` 配下に提供します。
+
+対応バージョンは `1.0.0-beta34` 以降です。Pelican はまだ開発が活発なため、バージョン間で翻訳キーの追加・変更が発生することがあります。
+
+## インストール
+
+Pelican Panel の管理画面から「プラグイン」ページを開き、「ファイルからインポート」または「URLからインポート」でこのリポジトリを直接インポートしてください。手動でファイルをサーバーに配置する必要はありません。
+
+インポート後、パネルの `.env` で日本語をデフォルトロケールにする場合は以下を設定してください。
+
+```
+APP_LOCALE=ja
+```
+
+設定後はキャッシュをクリアしてください。
+
+```
+php artisan config:clear
+php artisan cache:clear
+php artisan view:clear
+```
+
+`APP_LOCALE` はあくまで初期値であり、既存のユーザーアカウントには自動的には反映されません。各ユーザーは画面右上のプロフィール設定から個別に表示言語を日本語に切り替える必要があります。
+
+## 既知の制限
+
+一部のUI文字列は、Pelican Panel 本体のコード側で翻訳関数（`trans()`）を経由していないため、本プラグインを導入しても英語表示のままになる箇所があります。具体的には以下のようなパターンです。
+
+- ツールチップやモーダルの見出しは翻訳済みだが、ボタン本体のラベルが未設定で、Filament が内部名から英語ラベルを自動生成しているケース
+- 権限管理（Role）画面で、モデル名や権限名を `Str::headline()` で直接整形して表示しているケース
+- ソースコードに直接英語文字列がハードコードされているケース
+- 一覧表示が空の場合のメッセージ（`emptyStateHeading`）が未設定で、モデル名から英語のまま生成されるケース
+
+これらは本プラグインの翻訳ファイルの不足ではなく、Pelican Panel 本体側の実装に起因するものです。確認できた箇所は本体側に Issue として報告しています。
+
+また、Filament フレームワークが内部で提供している一部のUI（多要素認証の設定画面など）についても、翻訳ファイルの配置場所がプラグインの仕組みでは上書きできないことを確認しています。これらは本体または Filament 側の対応が必要です。
+
+## 翻訳について
+
+翻訳は Pelican Panel の `lang/en` を基準に作成しています。UIラベルは簡潔な表現を、説明文は「だ・である調」を基本としています。Wings、Egg、API、Docker などの固有名詞・技術用語は英語表記のまま残しています。
+
+訳がおかしい、または不足しているキーがある場合は Issue を立てるか、Pull Request を送ってください。
+
+## ライセンス
+
+Pelican Panel と同じ AGPL-3.0 ライセンスです。詳細は [LICENSE](LICENSE) を参照してください。
