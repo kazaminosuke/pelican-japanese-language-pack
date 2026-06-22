@@ -45,6 +45,8 @@ return [
     'rotated' => 'パスワードが更新されました',
     'rotate_error' => 'パスワードの更新に失敗しました',
     'databases' => 'データベース',
+    'no_databases' => 'データベースがありません',
+    'nodes' => 'ノード',
 
     'setup' => [
         'preparations' => '準備',

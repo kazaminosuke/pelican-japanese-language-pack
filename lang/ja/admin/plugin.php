@@ -18,6 +18,7 @@ return [
     'update' => '更新',
     'enable' => '有効化',
     'disable' => '無効化',
+    'file' => 'ファイル',
     'import_from_file' => 'ファイルからインポート',
     'import_from_url' => 'URL からインポート',
     'no_plugins' => 'プラグインがありません',

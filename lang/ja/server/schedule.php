@@ -12,6 +12,7 @@ return [
     'cron' => 'Cron',
     'status' => '状態',
     'schedule_status' => [
+        'new' => '新規',
         'inactive' => '無効',
         'processing' => '処理中',
         'active' => '有効',

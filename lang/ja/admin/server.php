@@ -93,6 +93,7 @@ return [
     'no_variables' => '選択した Egg には変数がありません！',
     'select_egg' => '変数を表示するには最初に Egg を選択してください！',
     'allocations' => 'ポート割り当て',
+    'no_allocations' => 'ポート割り当てがありません',
     'databases' => 'データベース',
     'no_databases' => 'このサーバーにはデータベースが存在しません',
     'delete_db' => ':name を削除してよろしいですか？',

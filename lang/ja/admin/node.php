@@ -99,6 +99,7 @@ return [
     'reset_help' => 'デーモントークンをリセットすると、古いトークンからのすべてのリクエストが無効になります。このトークンはサーバーの作成・削除を含むデーモン上のすべての機密操作に使用されます。セキュリティのために定期的に変更することを推奨します。',
 
     'no_nodes' => 'ノードがありません',
+    'no_allocations' => 'ポート割り当てがありません',
     'none' => 'なし',
     'cpu_chart' => 'CPU - :cpu% / :max%',
     'memory_chart' => 'メモリ - :used / :total',
@@ -122,6 +123,7 @@ return [
         'include_endpoints_hint' => 'エンドポイントを含めると、ログ内にパネル URL が表示され、隠蔽されません。',
         'include_logs' => 'ログを含める',
         'include_logs_hint' => 'ログを含めると最近のログが表示され、問題の追跡に役立ちます。',
+        'log_lines' => 'ログ行数',
         'run_diagnostics' => '診断を実行',
         'upload_to_pelican' => 'ログをアップロード',
         'logs_pulled' => 'ログを取得しました',
