@@ -11,6 +11,7 @@ return [
         'keys' => 'キー',
         '2fa' => '2FA',
         'customization' => 'カスタマイズ',
+        'passkeys' => 'パスキー',
     ],
     'username' => 'ユーザー名',
     'admin' => '管理画面',
@@ -73,4 +74,5 @@ return [
     'no_api_keys' => 'APIキーがありません',
     'no_ssh_keys' => 'SSHキーがありません',
     'activity_info' => '過去50件のアクティビティを表示',
+    'passkeys' => 'パスキー',
 ];
