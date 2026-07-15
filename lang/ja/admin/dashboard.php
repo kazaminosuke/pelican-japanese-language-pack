@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'heading' => 'Pelican へようこそ！',
+    'heading' => ':app へようこそ！',
     'version' => 'バージョン: :version',
     'advanced' => '詳細設定',
     'server' => 'サーバー',

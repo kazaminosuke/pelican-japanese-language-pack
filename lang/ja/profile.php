@@ -74,5 +74,4 @@ return [
     'no_api_keys' => 'APIキーがありません',
     'no_ssh_keys' => 'SSHキーがありません',
     'activity_info' => '過去50件のアクティビティを表示',
-    'passkeys' => 'パスキー',
 ];
