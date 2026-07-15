@@ -39,6 +39,27 @@ jobs:
         run: |
           zip -r japanese-language-pack.zip . -x ".git/*" -x ".github/*"
 
+      - name: Generate release notes
+        if: steps.check.outputs.exists == 'false'
+        run: |
+          PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          echo "## 変更内容" > release_notes.md
+          if [ -n "$PREV_TAG" ]; then
+            git log "$PREV_TAG"..HEAD --no-merges --pretty=format:'- %s' \
+              | grep -Ev '^- chore: bump (version|update\.json) to' >> release_notes.md || true
+          else
+            git log --no-merges --pretty=format:'- %s' \
+              | grep -Ev '^- chore: bump (version|update\.json) to' >> release_notes.md || true
+          fi
+
+          if [ -n "$PREV_TAG" ]; then
+            printf '\n\n**Full Changelog**: https://github.com/%s/compare/%s...v%s\n' \
+              "${{ github.repository }}" "$PREV_TAG" "${{ steps.version.outputs.version }}" >> release_notes.md
+          fi
+
+          cat release_notes.md
+
       - name: Create GitHub Release
         if: steps.check.outputs.exists == 'false'
         env:
@@ -47,7 +68,7 @@ jobs:
           gh release create "v${{ steps.version.outputs.version }}" \
             japanese-language-pack.zip \
             --title "v${{ steps.version.outputs.version }}" \
-            --notes "Automated release for version ${{ steps.version.outputs.version }}"
+            --notes-file release_notes.md
 
       - name: Update update.json
         if: steps.check.outputs.exists == 'false'
