@@ -42,20 +42,29 @@ jobs:
       - name: Generate release notes
         if: steps.check.outputs.exists == 'false'
         run: |
+          VERSION="${{ steps.version.outputs.version }}"
           PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
 
-          echo "## 変更内容" > release_notes.md
-          if [ -n "$PREV_TAG" ]; then
-            git log "$PREV_TAG"..HEAD --no-merges --pretty=format:'- %s' \
-              | grep -Ev '^- chore: bump (version|update\.json) to' >> release_notes.md || true
-          else
-            git log --no-merges --pretty=format:'- %s' \
-              | grep -Ev '^- chore: bump (version|update\.json) to' >> release_notes.md || true
+          awk -v ver="$VERSION" '
+            BEGIN { heading = "## [" ver "]" }
+            index($0, heading) == 1 { found=1; next }
+            found && index($0, "## [") == 1 { found=0 }
+            found { lines[++n] = $0 }
+            END {
+              start=1; end=n
+              while (start <= end && lines[start] ~ /^[ \t]*$/) start++
+              while (end >= start && lines[end] ~ /^[ \t]*$/) end--
+              for (i=start; i<=end; i++) print lines[i]
+            }
+          ' CHANGELOG.md > release_notes.md
+
+          if [ ! -s release_notes.md ]; then
+            echo "CHANGELOG.md に v${VERSION} のセクションが見つかりませんでした。" > release_notes.md
           fi
 
           if [ -n "$PREV_TAG" ]; then
             printf '\n\n**Full Changelog**: https://github.com/%s/compare/%s...v%s\n' \
-              "${{ github.repository }}" "$PREV_TAG" "${{ steps.version.outputs.version }}" >> release_notes.md
+              "${{ github.repository }}" "$PREV_TAG" "$VERSION" >> release_notes.md
           fi
 
           cat release_notes.md
