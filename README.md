@@ -50,3 +50,9 @@ php artisan view:clear
 ## ライセンス
 
 Pelican Panel と同じ AGPL-3.0 ライセンスです。詳細は [LICENSE](LICENSE) を参照してください。
+
+## Note
+
+
+This extension is intended to be supplementary.
+I also contribute to Crowdin, and I'm simply filling in the gaps where translations haven't caught up yet.
