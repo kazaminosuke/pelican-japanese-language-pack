@@ -10,6 +10,14 @@ return [
     'name' => '名前',
     'type' => 'タイプ',
     'server' => 'サーバー',
+    'scope' => [
+        'global' => 'グローバル',
+        'server' => 'サーバー',
+    ],
+    'tabs' => [
+        'global' => 'グローバル Webhook',
+        'server' => 'サーバー Webhook',
+    ],
     'information' => '情報',
     'payload' => 'ペイロード',
     'help' => 'ヘルプ',

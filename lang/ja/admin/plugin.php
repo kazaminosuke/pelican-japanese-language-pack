@@ -13,6 +13,7 @@ return [
     'status' => 'ステータス',
     'visit_website' => 'ウェブサイトを開く',
     'settings' => '設定',
+    'readme' => 'README',
     'install' => 'インストール',
     'uninstall' => 'アンインストール',
     'update' => '更新',

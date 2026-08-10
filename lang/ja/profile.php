@@ -33,6 +33,11 @@ return [
     'invalid_code' => '無効な2FAコード',
     'code_help' => '上記のQRコードを2段階認証アプリでスキャンし、生成されたコードを入力してください。',
     '2fa_enabled' => '2段階認証が現在有効です！',
+    'mfa' => [
+        'app' => 'アプリ',
+        'email' => 'メール',
+        'none' => 'なし',
+    ],
     'backup_help' => 'これらは再度表示されません！',
     'backup_codes' => 'バックアップコード',
     'disable_2fa' => '2FAを無効にする',

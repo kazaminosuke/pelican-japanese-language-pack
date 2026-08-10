@@ -12,6 +12,14 @@ return [
         'successful' => '成功',
         'failed' => '失敗',
     ],
+    'notifications' => [
+        'action' => '通知設定',
+        'toggle_manual' => '手動バックアップの通知',
+        'helper_manual' => 'このサーバーで手動作成したバックアップが完了または失敗したときに、通知とメールを受け取る。',
+        'toggle_scheduled' => 'スケジュールされたバックアップの通知',
+        'helper_scheduled' => 'このサーバーでスケジュールされたバックアップが完了または失敗したときに、通知とメールを受け取る。',
+        'saved' => '通知設定を更新しました',
+    ],
     'actions' => [
         'create' => [
             'title' => 'バックアップを作成',

@@ -121,7 +121,6 @@ return [
             'removed_from_server' => 'サーバーからの削除',
             'server_installed' => 'サーバーのインストール',
             'server_reinstalled' => 'サーバーの再インストール',
-            'backup_completed' => 'バックアップ完了',
         ],
         'connections' => [
             'title' => '接続',
