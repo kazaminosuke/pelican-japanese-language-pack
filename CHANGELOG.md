@@ -10,6 +10,10 @@
 
 ## [未リリース]
 
+### 修正
+
+- 不要な試験用 Filament 翻訳ファイル（`lang/ja/vendor/filament-panels/auth/multi-factor/email/provider.php`）を削除
+
 ## [0.2.3] - 2026-08-14
 
 ### 追加
