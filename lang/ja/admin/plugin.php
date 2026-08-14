@@ -68,6 +68,9 @@ return [
 
         'imported' => 'プラグインをインポートしました',
         'import_exists' => 'その ID を持つプラグインはすでに存在します',
+        'import_no_manifest' => 'zip に有効な plugin.json が含まれていません',
+        'import_invalid_id' => 'plugin.json に無効な id が含まれています',
+        'import_id_mismatch' => 'zip はプラグイン「:actual」用です。「:expected」用ではありません',
         'import_failed' => 'プラグインをインポートできませんでした',
     ],
 ];

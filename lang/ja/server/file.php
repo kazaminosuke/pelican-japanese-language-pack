@@ -8,6 +8,7 @@ return [
     'actions' => [
         'open' => '開く',
         'download' => 'ダウンロード',
+        'connect_sftp' => '現在のフォルダを SFTP で開く',
         'copy' => [
             'title' => 'コピー',
             'notification' => 'ファイルをコピーしました',
