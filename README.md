@@ -4,7 +4,7 @@ Pelican Panel 用の日本語翻訳プラグインです。
 
 ## 概要
 
-このプラグインは [Pelican Panel](https://github.com/pelican-dev/panel) に日本語ロケールを追加します。`category: language` プラグインとして、本体の `lang/en` に対応する翻訳ファイルを `lang/ja` 配下に提供します。
+このプラグインは [Pelican Panel](https://github.com/pelican/panel) に日本語ロケールを追加します。`category: language` プラグインとして、本体の `lang/en` に対応する翻訳ファイルを `lang/ja` 配下に提供します。
 
 対応バージョンは `1.0.0-beta36` 以降です。Pelican はまだ開発が活発なため、バージョン間で翻訳キーの追加・変更が発生することがあります。
 

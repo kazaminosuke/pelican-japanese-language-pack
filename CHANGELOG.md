@@ -10,9 +10,13 @@
 
 ## [未リリース]
 
+## [0.2.4] - 2026-08-17
+
 ### 修正
 
 - 不要な試験用 Filament 翻訳ファイル（`lang/ja/vendor/filament-panels/auth/multi-factor/email/provider.php`）を削除
+- README の Pelican Panel 参照 URL を `pelican-dev` から `pelican` organization へ更新
+- Pelican Panel v1.0.0-beta38 対応（翻訳キー差分なし）
 
 ## [0.2.3] - 2026-08-14
 
