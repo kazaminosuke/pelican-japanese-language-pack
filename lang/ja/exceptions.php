@@ -5,6 +5,7 @@ return [
     'node' => [
         'servers_attached' => 'ノードを削除するには、そのノードにサーバーが紐付いていない必要があります。',
         'error_connecting' => ':node に接続できませんでした',
+        'not_viable' => 'ノード :node には、このサーバーを受け入れるための十分な空きリソースがありません。',
         'daemon_off_config_updated' => 'デーモン設定は<strong>更新されました</strong>が、デーモン上の設定ファイルを自動更新中にエラーが発生しました。これらの変更を適用するには、設定ファイル (config.yml) を手動で更新する必要があります。',
     ],
     'allocations' => [

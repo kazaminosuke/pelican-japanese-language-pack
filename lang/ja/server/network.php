@@ -6,6 +6,7 @@ return [
     'limit' => 'ポート割り当ての上限に達しました',
     'address' => 'アドレス',
     'port' => 'ポート',
+    'port_hidden' => '非表示',
     'notes' => 'メモ',
     'no_notes' => 'メモなし',
     'make_primary' => 'プライマリに設定',
