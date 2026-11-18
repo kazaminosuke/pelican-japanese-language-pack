@@ -35,8 +35,8 @@ return [
             'no_nodes' => 'ノードがありません',
             'all_up_to_date' => 'すべて最新です',
             'outdated' => ':outdated / :all 古い',
-            'incompatible' => ':all 台中 :incompatible 台が非互換',
-            'failed_incompatible' => ':all 台中 :incompatible 台のノードで、このパネルが対応する最低バージョン :min より古い Wings が動作している',
+            'incompatible' => ':incompatible / :all 非互換',
+            'failed_incompatible' => ':incompatible / :all のノードで、パネルが対応する最低バージョン :min より古い Wings が動作しています',
         ],
         'panelversion' => [
             'label' => 'パネルバージョン',

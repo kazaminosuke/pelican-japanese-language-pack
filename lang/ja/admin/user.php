@@ -20,7 +20,7 @@ return [
     'accessible_servers' => 'アクセス可能なサーバー',
     'access' => 'アクセス',
     'subuser' => 'サブユーザー',
-    'subuser_access' => '所有者: :owner、権限: :count 件|所有者: :owner、権限: :count 件',
+    'subuser_access' => 'オーナー: :owner、権限: :count 件|オーナー: :owner、権限: :count 件',
     'subusers' => 'サブユーザー',
     'password_reset' => 'パスワードをリセット',
     'password_reset_sent' => 'パスワードリセットメールを送信しました',

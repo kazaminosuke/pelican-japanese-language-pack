@@ -17,13 +17,13 @@ return [
         'intro-update-available' => [
             'heading' => 'アップデート利用可能',
             'content' => ':latestVersion が利用可能になりました！パネルを更新するには、ドキュメントをご覧ください。',
-            'content_container' => ':latestVersion が利用可能である。新しいイメージを取得し、コンテナを再作成してパネルを更新してください。',
+            'content_container' => ':latestVersion が利用可能になりました！新しいイメージを取得し、コンテナを再作成してパネルを更新してください。',
             'button_changelog' => '新着情報',
             'button_guide' => '更新ガイド',
         ],
         'intro-version-unavailable' => [
             'heading' => 'バージョンを確認できません',
-            'content' => '現在 :version を使用している。GitHub から最新バージョンを取得できないため、更新の有無は不明である。',
+            'content' => '現在ご利用中のバージョンは :version です。GitHub から最新バージョンを取得できないため、アップデートの有無は不明です。',
         ],
         'intro-no-update' => [
             'heading' => 'お使いのパネルは最新の状態です',
@@ -31,7 +31,7 @@ return [
         ],
         'intro-first-node' => [
             'heading' => 'ノードが検出されません',
-            'content' => 'ノードがまだ設定されていないようです。ご安心ください。アクションボタンをクリックするだけで、最初のノードを作成できます！',
+            'content' => "ノードがまだ設定されていないようです。ご安心ください。アクションボタンをクリックするだけで、最初のノードを作成できます！",
             'extra_note' => 'もし問題が発生した場合は、GitHubでご報告ください。',
             'button_label' => 'Pelicanで最初のノードを作成',
         ],

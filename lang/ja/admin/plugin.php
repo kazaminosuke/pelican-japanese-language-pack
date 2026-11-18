@@ -7,7 +7,7 @@ return [
 
     'name' => '名前',
     'update_available' => 'このプラグインのアップデートが利用可能です',
-    'api_version_missing' => '⚠ plugin.json に api_version が指定されていないため、1 とみなす',
+    'api_version_missing' => '⚠ plugin.json に api_version が指定されていないため、1 とみなします',
     'author' => '作者',
     'version' => 'バージョン',
     'category' => 'カテゴリ',
@@ -20,7 +20,7 @@ return [
     'update' => '更新',
     'enable' => '有効化',
     'disable' => '無効化',
-    'set_default_theme' => '既定のテーマに設定',
+    'set_default_theme' => 'デフォルトのテーマに設定',
     'import_from_file' => 'ファイルからインポート',
     'import_from_url' => 'URL からインポート',
     'file' => 'ファイル',
@@ -28,8 +28,8 @@ return [
     'all' => 'すべて',
     'change_load_order' => '読み込み順を変更',
     'apply_load_order' => '読み込み順を適用',
-    'crashed_reload' => ':name がクラッシュし、無効化された。ページを再読み込みして続行してください。',
-    'safe_mode_active' => 'セーフモードが有効なため、プラグインは読み込まれていない。再び読み込むには PANEL_PLUGIN_SAFE_MODE の設定を解除してください。',
+    'crashed_reload' => ':name がクラッシュし、無効化されました。ページを再読み込みして続行してください。',
+    'safe_mode_active' => 'セーフモードが有効なため、プラグインは読み込まれていません。再び読み込むには PANEL_PLUGIN_SAFE_MODE の設定を解除してください。',
 
     'enable_theme_modal' => [
         'heading' => 'テーマはすでに有効です',
@@ -37,11 +37,11 @@ return [
     ],
 
     'default_theme_modal' => [
-        'heading' => '既定のテーマ',
-        'description' => 'このテーマを既定のテーマにも設定しますか？',
-        'set_as_default' => '既定のテーマに設定',
+        'heading' => 'デフォルトのテーマ',
+        'description' => 'このテーマをデフォルトのテーマにも設定しますか？',
+        'set_as_default' => 'デフォルトのテーマに設定',
         'force_theme' => 'このテーマを強制',
-        'force_theme_help' => '既定のテーマを全員に適用し、テーマ選択を非表示にする。',
+        'force_theme_help' => 'デフォルトのテーマを全員に適用し、テーマの選択欄を非表示にします。',
     ],
 
     'status_enum' => [
@@ -83,11 +83,11 @@ return [
         'installed_version' => 'インストール済み: :version',
         'reinstall' => '再インストール',
         'install_heading' => ':name をインストールしますか？',
-        'install_description' => 'プラグイン Hub から最新リリースをダウンロードし、バックグラウンドでインストールする。信頼できる作者のプラグインのみインストールしてください。',
-        'not_free' => 'パネルからインストールできるのは無料のプラグインのみである。',
-        'no_release' => 'このプラグインにはダウンロード可能なリリースがない。',
-        'no_permission' => 'このプラグインを置き換える権限がない。',
-        'unverified_release' => 'このプラグインのリリースには有効なチェックサム、または安全なダウンロード手段がないため、検証できない。',
+        'install_description' => 'プラグイン Hub から最新リリースをダウンロードし、バックグラウンドでインストールします。信頼できる作者のプラグインのみインストールしてください。',
+        'not_free' => 'パネルからインストールできるのは無料のプラグインのみです。',
+        'no_release' => 'このプラグインにはダウンロード可能なリリースがありません。',
+        'no_permission' => 'このプラグインを置き換える権限がありません。',
+        'unverified_release' => 'このプラグインのリリースには有効なチェックサムか安全なダウンロード手段のいずれかが欠けているため、検証できません。',
         'screenshot' => 'スクリーンショット :number',
         'previous_screenshot' => '前のスクリーンショット',
         'next_screenshot' => '次のスクリーンショット',
@@ -103,7 +103,7 @@ return [
 
     'notifications' => [
         'goto_plugins' => 'プラグインへ移動',
-        'default_theme_set' => '既定のテーマを更新しました',
+        'default_theme_set' => 'デフォルトのテーマを更新しました',
         'background_info' => 'この処理には数秒かかる場合があります。完了したら通知されます。',
 
         'install_started' => 'プラグインのインストールをバックグラウンドで開始しました',
@@ -127,9 +127,9 @@ return [
         'import_exists' => 'その ID を持つプラグインはすでに存在します',
         'import_no_manifest' => 'zip に有効な plugin.json が含まれていません',
         'import_invalid_id' => 'plugin.json に無効な id が含まれています',
-        'import_reserved_id' => 'プラグイン ID「:id」はパネルによって予約されている',
+        'import_reserved_id' => 'プラグイン ID「:id」はパネルによって予約されています',
         'import_id_mismatch' => 'zip はプラグイン「:actual」用です。「:expected」用ではありません',
-        'import_checksum_mismatch' => 'ダウンロードした ZIP が更新フィードのチェックサムと一致しない',
+        'import_checksum_mismatch' => 'ダウンロードした ZIP が更新フィードのチェックサムと一致しません',
         'import_failed' => 'プラグインをインポートできませんでした',
     ],
 ];

@@ -12,14 +12,14 @@ return [
     ],
 
     'added_to_server' => [
-        'subject' => 'サーバーに追加されました',
+        'subject' => 'サーバーにサブユーザーとして追加されました',
         'body' => 'あなたは次のサーバーのサブユーザーとして追加されており、サーバーに対する特定のコントロールが可能です。',
         'server_name' => 'サーバー名: :name',
         'action' => 'サーバーにアクセス',
     ],
 
     'removed_from_server' => [
-        'subject' => 'サーバーから削除されました',
+        'subject' => 'サーバーのサブユーザーから削除されました',
         'body' => '以下のサーバーのサブユーザーとして削除されました。',
         'server_name' => 'サーバー名: :name',
         'action' => 'パネルを開く',
@@ -33,8 +33,8 @@ return [
     ],
 
     'backup_completed' => [
-        'subject_success' => 'バックアップが完了しました',
-        'subject_failed' => 'バックアップに失敗しました',
+        'subject_success' => 'バックアップの作成が完了しました',
+        'subject_failed' => 'バックアップの作成に失敗しました',
         'body_success' => 'バックアップの作成が完了しました。',
         'body_failed' => 'バックアップの作成に失敗しました。',
         'backup_name' => 'バックアップ名: :name',

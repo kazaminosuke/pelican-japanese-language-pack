@@ -130,8 +130,8 @@ return [
             'update' => 'パネルの設定を <b>:count</b> 件更新しました|パネルの設定を <b>:count</b> 件更新しました',
         ],
         'apiKey' => [
-            'create' => 'API キー <b>:identifier</b> を作成しました',
-            'delete' => 'API キー <b>:identifier</b> を削除しました',
+            'create' => 'APIキー <b>:identifier</b> を作成しました',
+            'delete' => 'APIキー <b>:identifier</b> を削除しました',
         ],
         'backupHost' => [
             'create' => 'バックアップホスト <b>:name</b> を作成しました',

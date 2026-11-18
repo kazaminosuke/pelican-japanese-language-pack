@@ -152,7 +152,7 @@ return [
         'log_failed' => 'Wings に接続してサーバーのインストールログを取得できませんでした。',
         'transfer_started' => '転送を開始しました',
         'transfer_failed' => '転送に失敗しました',
-        'transfer_unconfirmed' => '移行の確認が取れていません',
+        'transfer_unconfirmed' => '転送の確認が取れていません',
         'already_transfering' => 'サーバーは現在転送中です。',
         'backup_transfer_failed' => 'バックアップの転送に失敗しました',
     ],
