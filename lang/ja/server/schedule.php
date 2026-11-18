@@ -30,7 +30,7 @@ return [
     'enabled' => 'スケジュールを有効にしますか？',
     'enabled_hint' => '有効にするとこのスケジュールは自動的に実行されます。',
 
-    'cron_body' => 'Cron 入力は常に UTC を前提としていることに注意してください。',
+    'cron_body' => '以下の Cron 入力には、お使いのタイムゾーンが適用されます。',
     'cron_timezone' => 'お使いのタイムゾーン (:timezone) での次回実行時刻: <b> :next_run </b>',
 
     'invalid' => '無効',
@@ -82,6 +82,7 @@ return [
         'first_task' => '最初のタスク',
         'seconds' => '秒|秒',
         'continue_on_failure' => '失敗時も続行',
+        'no_permission' => 'このタスク操作を使用する権限がありません。',
 
         'actions' => [
             'title' => 'アクション',

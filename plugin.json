@@ -2,14 +2,15 @@
     "id": "japanese-language-pack",
     "name": "Japanese Language Pack",
     "author": "kazaminosuke",
-    "version": "0.2.4",
-    "description": "\u65e5\u672c\u8a9e\u7ffb\u8a33\u30d1\u30c3\u30af",
+    "version": "0.2.5",
+    "description": "日本語翻訳パック",
     "category": "language",
     "url": null,
     "update_url": null,
     "namespace": "Kazaminosuke\\JapaneseLanguagePack",
     "class": "JapaneseLanguagePackPlugin",
     "panels": null,
-    "panel_version": "^1.0.0-beta38",
-    "composer_packages": null
+    "panel_version": "^1.0.0-rc.3",
+    "composer_packages": null,
+    "api_version": 1
 }

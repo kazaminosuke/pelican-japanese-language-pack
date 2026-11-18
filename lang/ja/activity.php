@@ -125,4 +125,58 @@ return [
         ],
         'crashed' => 'サーバーがクラッシュしました',
     ],
+    'audit' => [
+        'settings' => [
+            'update' => 'パネルの設定を <b>:count</b> 件更新しました|パネルの設定を <b>:count</b> 件更新しました',
+        ],
+        'apiKey' => [
+            'create' => 'APIキー <b>:identifier</b> を作成しました',
+            'delete' => 'APIキー <b>:identifier</b> を削除しました',
+        ],
+        'backupHost' => [
+            'create' => 'バックアップホスト <b>:name</b> を作成しました',
+            'update' => 'バックアップホスト <b>:name</b> を更新しました',
+            'delete' => 'バックアップホスト <b>:name</b> を削除しました',
+        ],
+        'databaseHost' => [
+            'create' => 'データベースホスト <b>:name</b> を作成しました',
+            'update' => 'データベースホスト <b>:name</b> を更新しました',
+            'delete' => 'データベースホスト <b>:name</b> を削除しました',
+        ],
+        'role' => [
+            'create' => 'ロール <b>:name</b> を作成しました',
+            'update' => 'ロール <b>:name</b> を更新しました',
+            'delete' => 'ロール <b>:name</b> を削除しました',
+        ],
+        'webhook' => [
+            'create' => 'Webhook <b>:endpoint</b> を作成しました',
+            'update' => 'Webhook <b>:endpoint</b> を更新しました',
+            'delete' => 'Webhook <b>:endpoint</b> を削除しました',
+        ],
+        'user' => [
+            'create' => 'ユーザー <b>:username</b> を作成しました',
+            'update' => 'ユーザー <b>:username</b> を更新しました',
+            'delete' => 'ユーザー <b>:username</b> を削除しました',
+        ],
+        'egg' => [
+            'create' => 'Egg <b>:name</b> を作成しました',
+            'update' => 'Egg <b>:name</b> を更新しました',
+            'delete' => 'Egg <b>:name</b> を削除しました',
+        ],
+        'mount' => [
+            'create' => 'マウント <b>:name</b> を作成しました',
+            'update' => 'マウント <b>:name</b> を更新しました',
+            'delete' => 'マウント <b>:name</b> を削除しました',
+        ],
+        'node' => [
+            'create' => 'ノード <b>:name</b> を作成しました',
+            'update' => 'ノード <b>:name</b> を更新しました',
+            'delete' => 'ノード <b>:name</b> を削除しました',
+        ],
+        'server' => [
+            'create' => 'サーバー <b>:name</b> を作成しました',
+            'update' => 'サーバー <b>:name</b> を更新しました',
+            'delete' => 'サーバー <b>:name</b> を削除しました',
+        ],
+    ],
 ];

@@ -6,11 +6,11 @@ Pelican Panel 用の日本語翻訳プラグインです。
 
 このプラグインは [Pelican Panel](https://github.com/pelican/panel) に日本語ロケールを追加します。`category: language` プラグインとして、本体の `lang/en` に対応する翻訳ファイルを `lang/ja` 配下に提供します。
 
-対応バージョンは `1.0.0-beta36` 以降です。Pelican はまだ開発が活発なため、バージョン間で翻訳キーの追加・変更が発生することがあります。
+このバージョン（0.2.5）は **Pelican Panel v1.0.0-rc.3** に対応しています。`lang/en` 全 42 ファイル・2,141 キーに対応し、プラグイン API バージョン 1 を明示しています。Pelican はまだ開発が活発なため、バージョン間で翻訳キーの追加・変更が発生することがあります。
 
 ## インストール
 
-Pelican Panel の管理画面から「プラグイン」ページを開き、「ファイルからインポート」または「URLからインポート」でこのリポジトリを直接インポートしてください。手動でファイルをサーバーに配置する必要はありません。
+Pelican Panel の管理画面から「プラグイン」ページを開き、プラグイン Hub で本パックを検索してください。または、「ファイルからインポート」または「URLからインポート」でこのリポジトリを直接インポートしてください。手動でファイルをサーバーに配置する必要はありません。
 
 インポート後、パネルの `.env` で日本語をデフォルトロケールにする場合は以下を設定してください。
 
@@ -47,9 +47,17 @@ php artisan view:clear
 
 訳がおかしい、または不足しているキーがある場合は Issue を立てるか、Pull Request を送ってください。
 
+## 翻訳の検証
+
+Pelican Panel v1.0.0-rc.3 のソースを用意して、次のコマンドでキーの過不足、プレースホルダー、複数形、HTML タグを確認できます。Pull Request と main への push 時にも同じ検証を実行します。
+
+```sh
+php scripts/check-translations.php /path/to/panel/lang/en
+```
+
 ## ライセンス
 
-Pelican Panel と同じ AGPL-3.0 ライセンスです。詳細は [LICENSE](LICENSE) を参照してください。
+Pelican Panel と同じ AGPL-3.0 ライセンスです。詳細は [license](license) を参照してください。
 
 ## Note
 

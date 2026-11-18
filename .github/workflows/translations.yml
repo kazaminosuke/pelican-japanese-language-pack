@@ -1,0 +1,38 @@
+name: Validate translations
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/checkout@v4
+        with:
+          repository: pelican/panel
+          ref: v1.0.0-rc.3
+          path: upstream
+          sparse-checkout: lang/en
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+
+      - name: Check PHP syntax
+        run: find lang src config database scripts -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: Check translation coverage
+        run: php scripts/check-translations.php upstream/lang/en
+
+      - name: Check release versions
+        run: |
+          php -r '$plugin = json_decode(file_get_contents("plugin.json"), true, 512, JSON_THROW_ON_ERROR); $update = json_decode(file_get_contents("update.json"), true, 512, JSON_THROW_ON_ERROR); if ($plugin["version"] !== $update["*"]["version"]) { fwrite(STDERR, "Release versions differ\n"); exit(1); }'

@@ -6,6 +6,10 @@ return [
     'command_blocked' => 'オフライン',
     'command_blocked_title' => 'サーバーがオフラインなのでコマンドを送信できません',
     'open_in_admin' => '管理画面で開く',
+    'copy' => 'コンソール出力をコピー',
+    'copied' => 'コンソール出力をクリップボードにコピーしました',
+    'copy_failed' => 'コンソール出力をコピーできませんでした',
+    'download' => 'コンソール出力をダウンロード',
     'power_actions' => [
         'start' => '起動',
         'stop' => '停止',
@@ -17,6 +21,7 @@ return [
         'cpu' => 'CPU',
         'memory' => 'メモリ',
         'network' => 'ネット',
+        'disk_io' => 'ディスク I/O',
         'disk' => 'ディスク',
         'name' => '名前',
         'status' => '状態',

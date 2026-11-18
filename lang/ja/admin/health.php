@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => '健康状態',
-    'results_refreshed' => '健康診断結果を更新しました',
+    'title' => '稼働状態',
+    'results_refreshed' => '診断結果を更新しました',
     'checked' => ':time に結果を確認しました',
     'refresh' => '更新',
     'results' => [
@@ -35,6 +35,8 @@ return [
             'no_nodes' => 'ノードがありません',
             'all_up_to_date' => 'すべて最新です',
             'outdated' => ':outdated / :all 古い',
+            'incompatible' => ':incompatible / :all 非互換',
+            'failed_incompatible' => ':incompatible / :all のノードで、パネルが対応する最低バージョン :min より古い Wings が動作しています',
         ],
         'panelversion' => [
             'label' => 'パネルバージョン',
@@ -42,6 +44,8 @@ return [
             'failed' => 'インストールされているバージョンは :currentVersion ですが、最新は :latestVersion です',
             'up_to_date' => '最新',
             'outdated' => '古い',
+            'unknown' => '不明',
+            'unavailable' => 'GitHub から最新バージョンを取得できません',
         ],
         'schedule' => [
             'label' => 'スケジュール',
@@ -51,6 +55,9 @@ return [
         ],
         'useddiskspace' => [
             'label' => 'ディスク容量',
+        ],
+        'queue' => [
+            'label' => 'キュー',
         ],
     ],
     'checks' => [
