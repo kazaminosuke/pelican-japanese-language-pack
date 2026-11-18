@@ -32,6 +32,7 @@ return [
             'cancelled' => 'キャンセルされました',
             'cancel' => 'キャンセル',
             'retry' => '再試行',
+            'retry_failed' => '失敗したアップロードを再試行（:count 件）',
             'minimize' => '最小化',
             'restore' => '復元',
             'close' => '閉じる',

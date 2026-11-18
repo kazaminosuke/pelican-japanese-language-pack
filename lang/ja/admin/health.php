@@ -35,6 +35,8 @@ return [
             'no_nodes' => 'ノードがありません',
             'all_up_to_date' => 'すべて最新です',
             'outdated' => ':outdated / :all 古い',
+            'incompatible' => ':all 台中 :incompatible 台が非互換',
+            'failed_incompatible' => ':all 台中 :incompatible 台のノードで、このパネルが対応する最低バージョン :min より古い Wings が動作している',
         ],
         'panelversion' => [
             'label' => 'パネルバージョン',
@@ -42,6 +44,8 @@ return [
             'failed' => 'インストールされているバージョンは :currentVersion ですが、最新は :latestVersion です',
             'up_to_date' => '最新',
             'outdated' => '古い',
+            'unknown' => '不明',
+            'unavailable' => 'GitHub から最新バージョンを取得できません',
         ],
         'schedule' => [
             'label' => 'スケジュール',
@@ -51,6 +55,9 @@ return [
         ],
         'useddiskspace' => [
             'label' => 'ディスク容量',
+        ],
+        'queue' => [
+            'label' => 'キュー',
         ],
     ],
     'checks' => [

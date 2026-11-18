@@ -37,6 +37,7 @@ return [
         ],
     ],
     'environment' => [
+        'env_locked' => ':key はサーバーの環境変数で設定されており、常に .env より優先されるため、保存しなかった。',
         'mail' => [
             'ask_smtp_host' => 'SMTPホスト (例: smtp.gmail.com)',
             'ask_smtp_port' => 'SMTPポート',
@@ -50,7 +51,7 @@ return [
             'ask_driver' => 'どのドライバを使用してメールを送信しますか？',
             'ask_mail_from' => '送信元メールアドレス',
             'ask_mail_name' => 'メールアドレスの表示名',
-            'ask_encryption' => '使用する暗号化方式',
+            'ask_scheme' => 'メールのスキーム',
         ],
     ],
 ];

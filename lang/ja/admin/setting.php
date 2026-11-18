@@ -4,6 +4,8 @@ return [
     'title' => '設定',
     'save_success' => '設定を保存しました',
     'save_failed' => '設定の保存に失敗しました',
+    'env_locked' => 'サーバーの環境変数 :key で設定済み',
+    'env_read_only' => '.env ファイルに書き込めないため、これらの設定はパネル外で管理されている。',
     'navigation' => [
         'general' => '一般',
         'captcha' => 'キャプチャ',
@@ -21,6 +23,10 @@ return [
         'debug_mode' => 'デバッグモード',
         'navigation' => 'ナビゲーション',
         'default_navigation' => 'デフォルトのナビゲーションタイプ',
+        'default_theme' => '既定のテーマ',
+        'default_theme_help' => 'テーマを選択していないユーザーに表示するテーマ。',
+        'force_theme' => '既定のテーマを強制',
+        'force_theme_help' => '既定のテーマを全員に適用し、テーマ選択を非表示にする。',
         'sidebar' => 'サイドバー',
         'topbar' => 'トップバー',
         'mixed' => '両方',
@@ -87,6 +93,8 @@ return [
             'bucket' => 'バケット',
             'endpoint' => 'エンドポイント',
             'use_path_style_endpoint' => 'パススタイルエンドポイントを使用',
+            'use_presigned_requests' => '署名付きリクエストを使用',
+            'use_presigned_requests_help' => 'クエリ文字列による認証ですべてのリクエストに署名する。Hetzner など、一部のプロバイダーで必要となる。',
         ],
     ],
     'oauth' => [
@@ -106,7 +114,7 @@ return [
     'misc' => [
         'auto_allocation' => [
             'title' => 'ポート割り当ての自動作成',
-            'helper' => 'ユーザーがクライアントエリアからポート割り当てを作成できるかどうかを切り替えます。',
+            'helper' => 'ユーザーがクライアントエリアから割り当てを作成できるかどうかを切り替える。サーバーにはプライマリの割り当てが必要である。',
             'question' => 'ユーザーがポート割り当てを作成できるようにしますか？',
             'create_new' => '利用可能なポート割り当てがない場合に新規作成しますか？',
             'create_new_help' => '有効にすると新しいポート割り当てを作成します。無効にすると既存の未割り当てのポート割り当てのみを割り当てます。どちらのオプションも以下のポート範囲を考慮します。',
