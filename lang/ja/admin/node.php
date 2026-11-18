@@ -17,7 +17,7 @@ return [
         'id' => 'ID',
         'uuid' => 'UUID',
         'ssl' => 'SSL',
-        'health' => '健康状態',
+        'health' => '稼働状態',
         'reachable' => '到達可能',
         'name' => '名前',
         'address' => 'アドレス',

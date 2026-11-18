@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'title' => '健康状態',
-    'results_refreshed' => '健康診断結果を更新しました',
+    'title' => '稼働状態',
+    'results_refreshed' => '診断結果を更新しました',
     'checked' => ':time に結果を確認しました',
     'refresh' => '更新',
     'results' => [
